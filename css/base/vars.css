@@ -1,0 +1,12 @@
+:root {
+  --container-width: 1765px;
+
+  --color-dark: #0d0d0d;
+  --color-accent: #8b0f0f;
+  --color-white: #ffffff;
+
+  --font-primary: 'Mulish', sans-serif;
+  --font-secondary: 'Vela Sans', sans-serif;
+
+  --color-bg-light: #f2ebe0;
+}

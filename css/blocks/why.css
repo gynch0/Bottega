@@ -1,0 +1,235 @@
+.why {
+	background-color: var(--color-bg-light);
+	padding-top: calc(3vw + 40px);
+	padding-bottom: calc(3vw + 40px);
+}
+
+.why__title {
+	font-family: var(--font-secondary);
+	font-size: clamp(22px, 2.5vw + 10px, 52px);
+	font-weight: 300;
+	line-height: 1.15;
+	letter-spacing: -0.03em;
+	color: #46332c;
+	text-align: center;
+	margin-bottom: calc(2vw + 32px);
+}
+
+.why__body {
+	background-color: #46332c;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: calc(1.5vw + 20px);
+	padding: calc(2vw + 28px) calc(2vw + 32px);
+	align-items: stretch;
+}
+
+/* ── Left list ── */
+.why__list {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	scrollbar-width: none;
+	-webkit-mask-image: linear-gradient(
+		to bottom,
+		transparent 0,
+		#000 22%,
+		#000 78%,
+		transparent 100%
+	);
+	mask-image: linear-gradient(
+		to bottom,
+		transparent 0,
+		#000 22%,
+		#000 78%,
+		transparent 100%
+	);
+}
+
+.why__list::-webkit-scrollbar {
+	display: none;
+}
+
+.why__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.18);
+	padding: calc(0.5vw + 10px) 8px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.why__item:last-child {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.why__item-title {
+	font-family: var(--font-primary);
+	font-size: clamp(11px, 0.45vw + 9px, 14px);
+	font-weight: 600;
+	line-height: 1.3;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.3);
+	transition: color 0.25s;
+}
+
+.why__item--active .why__item-title {
+	color: var(--color-white);
+}
+
+.why__item-desc {
+	display: none;
+}
+
+/* ── Right panel ── */
+.why__panel {
+	background-color: #CCC2B9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: calc(3vw + 32px) calc(2vw + 32px);
+	gap: calc(0.8vw + 12px);
+	aspect-ratio: 961 / 1059;
+	overflow: hidden;
+}
+
+.why__panel-title {
+	font-family: var(--font-primary);
+	font-size: clamp(12px, 0.5vw + 10px, 16px);
+	font-weight: 600;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: #46332c;
+	margin-bottom: calc(0.4vw + 6px);
+}
+
+.why__panel-img-wrap {
+	width: clamp(180px, 22vw, 320px);
+	max-height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: calc(0.8vw + 10px);
+}
+
+.why__panel-img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+	display: block;
+}
+
+.why__panel-desc {
+	font-family: var(--font-primary);
+	font-size: clamp(12px, 0.45vw + 9px, 15px);
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: -0.005em;
+	color: #46332c;
+	max-width: 36ch;
+}
+
+/* ── Mobile accordion ── */
+@media (max-width: 768px) {
+	.why {
+		background-color: var(--color-bg-light);
+		padding-top: calc(6vw + 32px);
+		padding-bottom: 0;
+	}
+
+	.why__title {
+		font-family: var(--font-secondary);
+		font-weight: 400;
+		color: #46332c;
+		font-size: 22px;
+		line-height: 1;
+		padding-inline: 24px;
+		margin-bottom: calc(6vw + 24px);
+	}
+
+	.why__body {
+		background-color: #46332c;
+		display: block;
+		padding: calc(4vw + 16px) 20px;
+		margin-inline: -20px;
+	}
+
+	.why__list {
+		max-height: none;
+		overflow: visible;
+		-webkit-mask-image: none;
+		mask-image: none;
+	}
+
+	.why__panel {
+		display: none;
+	}
+
+	.why__item {
+		padding: 18px 16px;
+		align-items: stretch;
+		text-align: left;
+		border-top: 1px solid rgba(255, 255, 255, 0.18);
+	}
+
+	.why__item:last-child {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+	}
+
+	.why__item-title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 12px;
+		font-family: var(--font-secondary);
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 1.2;
+		letter-spacing: 0;
+		text-transform: uppercase;
+		color: var(--color-white);
+	}
+
+	.why__item-title::after {
+		content: '›';
+		font-size: 22px;
+		line-height: 1;
+		font-weight: 300;
+		color: rgba(255, 255, 255, 0.6);
+		transition: transform 0.25s;
+		flex-shrink: 0;
+	}
+
+	.why__item--active .why__item-title::after {
+		transform: rotate(90deg);
+	}
+
+	.why__item--active .why__item-desc {
+		display: flex;
+		gap: 14px;
+		margin-top: 16px;
+		font-family: var(--font-primary);
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.45;
+		letter-spacing: -0.005em;
+		color: rgba(255, 255, 255, 0.7);
+	}
+
+	.why__item--active .why__item-desc::before {
+		content: '';
+		flex: 0 0 auto;
+		width: 110px;
+		height: 110px;
+		background-image: url('../../images/why-jewelry.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+}

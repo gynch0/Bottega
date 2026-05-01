@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bottega Berkuta</title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__top">
+				<p class="header__announce">
+					Бесплатная доставка на все заказы свыше €250
+				</p>
+			</div>
+			<div class="header__body">
+				<div class="container header__inner">
+					<button
+						class="header__burger burger"
+						type="button"
+						aria-label="Открыть меню"
+					>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
+
+					<nav class="header__nav" aria-label="Основная навигация">
+						<ul class="header__nav-list">
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link">Каталог</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link">Коллекции</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link">О бренде</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link header__nav-link--dropdown"
+									>Покупателям</a
+								>
+							</li>
+						</ul>
+					</nav>
+
+					<a
+						href="/"
+						class="header__logo"
+						aria-label="Bottega Berkuta — на главную"
+					>
+						<img
+							src="icons/logo.svg"
+							width="52"
+							height="80"
+							alt="Bottega Berkuta"
+							class="header__logo-img"
+						/>
+					</a>
+
+					<div class="header__actions">
+						<a href="#" class="header__nav-link">Контакты</a>
+						<button class="header__action-btn" type="button">
+							<img
+								src="icons/icon-search.svg"
+								width="21"
+								height="21"
+								alt=""
+								aria-hidden="true"
+							/>
+							<span>Поиск</span>
+						</button>
+						<button class="header__action-btn" type="button">
+							<img
+								src="icons/icon-cart.svg"
+								width="21"
+								height="27"
+								alt=""
+								aria-hidden="true"
+							/>
+							<span>Корзина</span>
+						</button>
+						<a href="#" class="header__cta">Подобрать украшение</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="container hero__content">
+					<p class="hero__subtitle">
+						18-каратное золото. Природные драгоценные камни.<br />
+						Создано в Италии.
+					</p>
+					<a href="#" class="hero__btn">Выбрать украшение</a>
+				</div>
+				<div class="hero__brand">
+					<img
+						src="images/brand-title.png"
+						alt="Bottega Berkuta"
+						class="hero__brand-img"
+					/>
+				</div>
+			</section>
+			<section class="catalog-preview">
+				<div class="container catalog-preview__container">
+					<h2 class="catalog-preview__title">
+						Каждая ваша покупка – вклад в себя <br />красоту и роскошь
+					</h2>
+					<ul class="catalog-preview__grid">
+						<li class="catalog-preview__item">
+							<div class="catalog-preview__img-wrap">
+								<img
+									class="catalog-preview__img"
+									src="images/slider-1.jpg"
+									width="189"
+									height="189"
+									loading="lazy"
+									alt="Браслеты"
+								/>
+							</div>
+							<span class="catalog-preview__name">Браслеты</span>
+						</li>
+						<li class="catalog-preview__item">
+							<div class="catalog-preview__img-wrap">
+								<img
+									class="catalog-preview__img"
+									src="images/slider-2.jpg"
+									width="189"
+									height="189"
+									loading="lazy"
+									alt="Колье"
+								/>
+							</div>
+							<span class="catalog-preview__name">Колье</span>
+						</li>
+						<li class="catalog-preview__item">
+							<div class="catalog-preview__img-wrap">
+								<img
+									class="catalog-preview__img"
+									src="images/slider-3.jpg"
+									width="189"
+									height="189"
+									loading="lazy"
+									alt="Серьги"
+								/>
+							</div>
+							<span class="catalog-preview__name">Серьги</span>
+						</li>
+						<li class="catalog-preview__item">
+							<div class="catalog-preview__img-wrap">
+								<img
+									class="catalog-preview__img"
+									src="images/slider-4.jpg"
+									width="189"
+									height="189"
+									loading="lazy"
+									alt="Цепочки"
+								/>
+							</div>
+							<span class="catalog-preview__name">Цепочки</span>
+						</li>
+						<li class="catalog-preview__item">
+							<div class="catalog-preview__img-wrap">
+								<img
+									class="catalog-preview__img"
+									src="images/slider-5.jpg"
+									width="189"
+									height="189"
+									loading="lazy"
+									alt="Кольца"
+								/>
+							</div>
+							<span class="catalog-preview__name catalog-preview__name--active"
+								>Кольца</span
+							>
+						</li>
+						<li class="catalog-preview__item">
+							<div class="catalog-preview__img-wrap">
+								<img
+									class="catalog-preview__img"
+									src="images/slider-6.jpg"
+									width="189"
+									height="189"
+									loading="lazy"
+									alt="Сотуары"
+								/>
+							</div>
+							<span class="catalog-preview__name">Сотуары</span>
+						</li>
+						<li class="catalog-preview__item">
+							<div class="catalog-preview__img-wrap">
+								<img
+									class="catalog-preview__img"
+									src="images/slider-7.jpg"
+									width="189"
+									height="189"
+									loading="lazy"
+									alt="Подвески"
+								/>
+							</div>
+							<span class="catalog-preview__name">Подвески</span>
+						</li>
+						<li class="catalog-preview__item">
+							<div class="catalog-preview__img-wrap">
+								<img
+									class="catalog-preview__img"
+									src="images/slider-8.jpg"
+									width="189"
+									height="189"
+									loading="lazy"
+									alt="Слейвы"
+								/>
+							</div>
+							<span class="catalog-preview__name">Слейвы</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="about">
+				<div class="container about__container">
+					<div class="about__content">
+						<p class="about__label">Каждая ваша покупка —</p>
+						<h2 class="about__title">Вклад в себя, красоту и роскошь</h2>
+						<p class="about__description">
+							Любой образ завершён только тогда, когда кроме одежды, обуви и сумки
+							правильно подобрано ювелирное изделие. Вы не покупаете украшения под
+							тренды, а создаёте уникальный ювелирный гардероб из 18-каратного
+							золота и натуральных камней.
+						</p>
+						<ul class="about__categories">
+							<li class="about__category">Кольца</li>
+							<li class="about__category">Серьги</li>
+							<li class="about__category">Колье</li>
+							<li class="about__category">Браслеты</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="founder">
+				<div class="founder__grid">
+					<div class="founder__img-wrap">
+						<img
+							class="founder__img"
+							src="images/founder-left.jpg"
+							width="400"
+							height="600"
+							loading="lazy"
+							alt="Украшения Bottega Berkuta"
+						/>
+					</div>
+					<div class="founder__content">
+						<p class="founder__label">С вами на связи я,</p>
+						<h2 class="founder__title">
+							Татьяна Беркута, <span class="founder__title-break">ваш личный ювелир и основательница бренда Bottega Berkuta в Италии.</span>
+						</h2>
+						<span class="founder__dot">•</span>
+						<p class="founder__description">
+							Я лично слежу за тем, чтобы вы были довольны изделием не только при получении, но и спустя года после покупки.
+						</p>
+						<a href="#" class="founder__btn">Познакомиться ближе</a>
+					</div>
+					<div class="founder__img-wrap">
+						<img
+							class="founder__img"
+							src="images/founder-right-2.jpg"
+							width="400"
+							height="600"
+							loading="lazy"
+							alt="Татьяна Беркута"
+						/>
+					</div>
+				</div>
+			</section>
+			<section class="collections">
+				<div class="container collections__container">
+					<ul class="collections__grid">
+						<li class="collections__item collections__item--active">
+							<span class="collections__name">Smeraldi</span>
+							<span class="collections__subtitle">Изумруды</span>
+						</li>
+						<li class="collections__item">
+							<span class="collections__name">Perle di mare</span>
+							<span class="collections__subtitle">Морские жемчужины</span>
+						</li>
+						<li class="collections__item">
+							<span class="collections__name">1 soldo</span>
+							<span class="collections__subtitle">Монеты</span>
+						</li>
+						<li class="collections__item">
+							<span class="collections__name">Chevalie</span>
+							<span class="collections__subtitle">Кольца на мизинец</span>
+						</li>
+						<li class="collections__item">
+							<span class="collections__name">Estate Italiana</span>
+							<span class="collections__subtitle">Итальянское лето</span>
+						</li>
+						<li class="collections__item">
+							<span class="collections__name">Подарочный сертификат</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="collection-detail">
+				<div class="collection-detail__grid">
+					<div class="collection-detail__content">
+						<span class="collection-detail__label">Коллекция</span>
+						<h2 class="collection-detail__title">«Smeraldi»</h2>
+						<p class="collection-detail__subtitle">
+							драгоценности, которые никогда не потеряют актуальности.
+						</p>
+						<span class="collection-detail__dot">•</span>
+						<div class="collection-detail__description">
+							<p>В коллекции Smeraldi — изумруды из Колумбии и Бразилии. Их оттенки не повторяются, поэтому каждое украшение с изумрудом уникально. Внутреннее включение — отпечатки природы, делающие камень живым.</p>
+							<p>Эти изделия конкурируют по красоте и ценности с бриллиантами, но звучат мягче, теплее, изысканнее. Изумруд — это глубина, статус и женственность.</p>
+						</div>
+						<a href="#" class="collection-detail__btn">Открыть тайну зелёного</a>
+					</div>
+					<div class="collection-detail__img-wrap">
+						<img
+							class="collection-detail__img"
+							src="images/collection-smeraldi.jpg"
+							width="817"
+							height="800"
+							loading="lazy"
+							alt="Коллекция Smeraldi"
+						/>
+					</div>
+				</div>
+			</section>
+			<section class="bespoke">
+				<div class="container bespoke__container">
+					<div class="bespoke__grid">
+						<div class="bespoke__content">
+							<h2 class="bespoke__title">Украшения, которых<br />нет ни у кого</h2>
+							<div class="bespoke__texts">
+								<p class="bespoke__text">Мы воплощаем в жизнь ювелирные фантазии и пожелания наших клиентов. Каждое изделие проектируем вместе: от первого эскиза до финальной полировки. Ваша ювелирная мечта придёт к вам напрямую из Италии.</p>
+								<p class="bespoke__text">Bottega Berkuta создано множество украшений по клиентским задумкам: именные запонки, браслет со старинной монетой, брошь-булавка в форме зуба для стоматолога, браслет в форме клюшки гольфа, цепочка с ягуаром в чёрном 18-каратном золоте.</p>
+							</div>
+							<p class="bespoke__how-label">Как это работает:</p>
+							<ul class="bespoke__steps">
+								<li class="bespoke__step">
+									<span class="bespoke__step-num">/01</span>
+									<p class="bespoke__step-text">Проводим консультацию в формате беседы, чтобы понять вашу задумку, образ жизни или повод.</p>
+								</li>
+								<li class="bespoke__step">
+									<span class="bespoke__step-num">/02</span>
+									<p class="bespoke__step-text">Подбираем камни из нашей коллекции или ищем редкие экземпляры.</p>
+								</li>
+								<li class="bespoke__step">
+									<span class="bespoke__step-num">/03</span>
+									<p class="bespoke__step-text">Готовим эскиз и 3D-визуализацию. Вы увидите будущее украшение ещё до начала работ и сможете внести изменения.</p>
+								</li>
+								<li class="bespoke__step">
+									<span class="bespoke__step-num">/04</span>
+									<p class="bespoke__step-text">Создаём руками ювелирных творцов. Каждое изделие выполняется с полным сопровождением Татьяны, основательницы бренда.</p>
+								</li>
+							</ul>
+						</div>
+						<div class="bespoke__images">
+							<div class="bespoke__img-wrap">
+								<img
+									class="bespoke__img"
+									src="images/review-1.jpg"
+									width="573"
+									height="311"
+									loading="lazy"
+									alt="Украшения на заказ"
+								/>
+							</div>
+							<div class="bespoke__img-wrap">
+								<img
+									class="bespoke__img"
+									src="images/review-2.jpg"
+									width="573"
+									height="311"
+									loading="lazy"
+									alt="Украшения Bottega Berkuta"
+								/>
+							</div>
+						</div>
+					</div>
+					<hr class="bespoke__divider" />
+					<div class="bespoke__footer">
+						<p class="bespoke__contacts">Свяжитесь с нами по адресу<br />info@bottegaberkuta.com<br />или в WhatsApp, если:</p>
+						<ul class="bespoke__conditions">
+							<li class="bespoke__condition">хотите адаптировать готовую модель с сайта под себя.</li>
+							<li class="bespoke__condition">вам нужен подарок, в который вложен смысл.</li>
+							<li class="bespoke__condition">у вас есть камень, и вы не знаете, как его оформить.</li>
+							<li class="bespoke__condition">хотите создать своё уникальное украшение.</li>
+						</ul>
+						<a href="#" class="bespoke__btn">Создать своё украшение</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="reviews">
+				<div class="container">
+					<h2 class="reviews__title">Истории и благодарности<br>наших красивых клиентов</h2>
+					<div class="reviews__list">
+						<article class="reviews__card">
+							<div class="reviews__img-wrap">
+								<img src="images/review-4.jpg" alt="Миkaэла Нотарианни" class="reviews__img">
+							</div>
+							<p class="reviews__name">Миkaэла<br>Нотарианни</p>
+							<p class="reviews__type">кольцо</p>
+							<p class="reviews__text">Я долго не могла выбрать кольцо. У Татьяны получилось не просто помочь — она будто прочитала мои мысли. Такое внимание, такая чуткость... Теперь это украшение не хочется снимать, ведь оно прекрасно сочетается с каждым моим образом.</p>
+						</article>
+						<article class="reviews__card">
+							<div class="reviews__img-wrap">
+								<img src="images/review-5.jpg" alt="Миkaэла Нотарианни" class="reviews__img">
+							</div>
+							<p class="reviews__name">Миkaэла<br>Нотарианни</p>
+							<p class="reviews__type">кольцо</p>
+							<p class="reviews__text">Я долго не могла выбрать кольцо. У Татьяны получилось не просто помочь — она будто прочитала мои мысли. Такое внимание, такая чуткость... Теперь это украшение не хочется снимать, ведь оно прекрасно сочетается с каждым моим образом.</p>
+						</article>
+						<article class="reviews__card">
+							<div class="reviews__img-wrap">
+								<img src="images/review-6.jpg" alt="Миkaэла Нотарианни" class="reviews__img">
+							</div>
+							<p class="reviews__name">Миkaэла<br>Нотарианни</p>
+							<p class="reviews__type">кольцо</p>
+							<p class="reviews__text">Я долго не могла выбрать кольцо. У Татьяны получилось не просто помочь — она будто прочитала мои мысли. Такое внимание, такая чуткость... Теперь это украшение не хочется снимать, ведь оно прекрасно сочетается с каждым моим образом.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="why">
+				<div class="container">
+					<h2 class="why__title">Bottega Berkuta —<br>искусство итальянского ювелирного<br>мастерства и элегантность вне времени</h2>
+					<div class="why__body">
+						<ul class="why__list">
+							<li class="why__item why__item--active" data-index="0">
+								<span class="why__item-title">Made in Italy</span>
+								<span class="why__item-desc">Каждое изделие рождается в Италии и отправляется напрямую к вам из Италии.</span>
+							</li>
+							<li class="why__item" data-index="1">
+								<span class="why__item-title">Ручная работа</span>
+								<span class="why__item-desc">Каждое украшение создано ювелирами ремесленниками в мастерских Bottega Berkuta.</span>
+							</li>
+							<li class="why__item" data-index="2">
+								<span class="why__item-title">Натуральные камни</span>
+								<span class="why__item-desc">Мы работаем только с природными драгоценными камнями, которые проходят экспертизу в Италии. Мы доверяем ваши камни только европейским филиалам международных лабораторий.</span>
+							</li>
+							<li class="why__item" data-index="3">
+								<span class="why__item-title">Стиль вне времени</span>
+								<span class="why__item-desc">Ваш ювелирный гардероб может расти и меняться с годами. Но мастерство итальянских ювелиров и стиль «ежедневной тихой роскоши» не подвластны времени и трендам.</span>
+							</li>
+							<li class="why__item" data-index="4">
+								<span class="why__item-title">Ограниченная серия</span>
+								<span class="why__item-desc">Каждый экземпляр уникален и редок. В природе не существует двух одинаковых камней, как не существует двух одинаковых женщин. Не ищите двух абсолютно одинаковых изделий.</span>
+							</li>
+							<li class="why__item" data-index="5">
+								<span class="why__item-title">Итальянская утончённость и стиль</span>
+								<span class="why__item-desc">В каждом изделии — сочетание опыта профессиональных ювелиров и тонкий итальянский вкус.</span>
+							</li>
+							<li class="why__item" data-index="6">
+								<span class="why__item-title">Идеальные формы и размеры</span>
+								<span class="why__item-desc">Изделия Bottega Berkuta сидят идеально, подчёркивая красоту каждой женщины. Мы знаем, как визуально сделать ваши руки изящнее, шею тоньше и длиннее, а мочки ушей аккуратнее.</span>
+							</li>
+							<li class="why__item" data-index="7">
+								<span class="why__item-title">Стиль вне времени</span>
+								<span class="why__item-desc">Ваш ювелирный гардероб может расти и меняться с годами. Но мастерство итальянских ювелиров и стиль «ежедневной тихой роскоши» не подвластны времени и трендам.</span>
+							</li>
+							<li class="why__item" data-index="8">
+								<span class="why__item-title">Семейная ценность, передаваемая детям</span>
+								<span class="why__item-desc">Драгоценности Bottega Berkuta станут историей вашей семьи. Что может быть прекраснее, увидеть свою счастливую дочь, внучку или племянницу в вашем колье?</span>
+							</li>
+							<li class="why__item" data-index="9">
+								<span class="why__item-title">Личный ювелирный консультант</span>
+								<span class="why__item-desc">Я, Татьяна Беркута, основатель бренда, остаюсь на связи с каждым клиентом долгие годы.</span>
+							</li>
+							<li class="why__item" data-index="10">
+								<span class="why__item-title">Забота о каждом клиенте</span>
+								<span class="why__item-desc">Мы не просто продаём вам украшения, а выстраиваем долгосрочные отношения. Забота о каждом клиенте — ценность бренда Bottega Berkuta.</span>
+							</li>
+							<li class="why__item" data-index="11">
+								<span class="why__item-title">Абсолютная уверенность в качестве</span>
+								<span class="why__item-desc">Гарантия на все изделия 2 года. Пожизненный сервис. Мы всегда рядом с вами.</span>
+							</li>
+						</ul>
+						<div class="why__panel">
+							<div class="why__panel-img-wrap">
+								<img src="images/why-jewelry.jpg" alt="" class="why__panel-img">
+							</div>
+							<p class="why__panel-title">Made in Italy</p>
+							<p class="why__panel-desc">Каждое изделие рождается в Италии и отправляется напрямую к вам из Италии.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="care-steps">
+				<div class="container">
+					<div class="care-steps__head">
+						<h2 class="care-steps__title">Забота о вас шаг за шагом</h2>
+						<p class="care-steps__subtitle">Покупка ювелирных изделий онлайн — это доверие, которое.</p>
+					</div>
+				</div>
+				<div class="care-steps__slider">
+					<ul class="care-steps__list">
+						<li class="care-steps__card">
+							<p class="care-steps__heading"><span class="care-steps__num">01 /</span> <span class="care-steps__name">Лёгкий выбор на сайте</span></p>
+							<p class="care-steps__text">Каждое украшение снято при естественном свете, чтобы вы сразу видели, как оно будет сиять в лучах солнца. Дополнительные фото или видео каждого изделия пришлём в Instagram.</p>
+						</li>
+						<li class="care-steps__card">
+							<p class="care-steps__heading"><span class="care-steps__num">02 /</span> <span class="care-steps__name">Безопасная оплата</span></p>
+							<p class="care-steps__text">Мы не видим и не сохраняем платёжные данные. Принимаем карты всех банков и платёжных систем.</p>
+						</li>
+						<li class="care-steps__card care-steps__card--image">
+							<img src="images/care-1.jpg" alt="" class="care-steps__img">
+						</li>
+						<li class="care-steps__card care-steps__card--dark">
+							<p class="care-steps__heading"><span class="care-steps__num">03 /</span> <span class="care-steps__name">Доставка по всему миру</span></p>
+							<p class="care-steps__text">Доставляем во все страны мира, работаем с разными курьерскими службами. Точные сроки доставки вы можете уточнить до оформления заказа, связавшись с нами по адресу info@bottegaberkuta.com или в WhatsApp/Instagram.</p>
+							<a href="#" class="care-steps__link">Подробнее</a>
+						</li>
+						<li class="care-steps__card care-steps__card--image">
+							<img src="images/care-2.jpg" alt="" class="care-steps__img">
+						</li>
+						<li class="care-steps__card">
+							<p class="care-steps__heading"><span class="care-steps__num">05 /</span> <span class="care-steps__name">Упаковка — неотъемлемая часть украшения</span></p>
+							<p class="care-steps__text">Каждое ювелирное украшение вы получите в индивидуальной коробке и фирменном пакете Bottega Berkuta вместе с гарантией на изделие. При необходимости, во время оформления или оплаты заказа, вы можете добавить персонализированное письмо с поздравлением к вашей покупке.</p>
+						</li>
+						<li class="care-steps__card">
+							<p class="care-steps__heading"><span class="care-steps__num">06 /</span> <span class="care-steps__name">Поддержка и гарантия</span></p>
+							<p class="care-steps__text">Обмен или возврат возможен, даже если украшение не оправдало ожидание. Вернём деньги в указанный срок и подберём для вас другое украшение, которое вы полюбите.<br><br>Вы получаете 2 года полной гарантии на украшение и пожизненный сервис на всевозможные дефекты производства. Даже спустя 5 лет после покупки.</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="gift">
+				<div class="gift__inner">
+					<div class="gift__left">
+						<h2 class="gift__title">Драгоценности в подарок<br>без повода</h2>
+						<p class="gift__subtitle">Яркие эмоции от момента, когда вы открываете фирменную упаковку Bottega Berkuta с украшением — показатель, что вы выберете лучшее.</p>
+						<ul class="gift__list">
+							<li class="gift__item">Сертификат и гарантийный паспорт</li>
+							<li class="gift__item">Фирменная коробка</li>
+							<li class="gift__item">Тканевый мешочек для поездок</li>
+							<li class="gift__item">Бумажный пакет с логотипом</li>
+						</ul>
+						<p class="gift__note">По вашему желанию мы добавим именное письмо от основательницы и ваши заметки. Оставьте нам запрос во время оформления или оплаты покупки.</p>
+					</div>
+					<div class="gift__right">
+						<div class="gift__card">
+							<p class="gift__card-text">Если вы покупаете в подарок — просто скажите. Добавим нужные детали, чтобы человек почувствовал, что это выбрано именно для него.</p>
+							<p class="gift__card-text">Не знаете, какое изделие выбрать? Можете заказать «Подарочный сертификат».</p>
+							<span class="gift__card-icon" aria-hidden="true">?</span>
+							<a href="#" class="gift__card-btn">Заказать сертификат</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script src="js/burger.js"></script>
+		<script src="js/why.js"></script>
+	</body>
+</html>
