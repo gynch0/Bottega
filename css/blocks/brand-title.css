@@ -1,0 +1,8 @@
+.brand-title {
+  overflow: hidden;
+}
+
+.brand-title__img {
+  width: 100%;
+  display: block;
+}

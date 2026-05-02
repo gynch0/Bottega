@@ -1,0 +1,52 @@
+.burger {
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.burger__line {
+  display: block;
+  height: 1.5px;
+  background-color: var(--color-white);
+  transition: transform 0.3s, opacity 0.3s, width 0.3s;
+}
+
+.burger__line:nth-child(1) {
+  width: 75%;
+}
+
+.burger__line:nth-child(2) {
+  width: 100%;
+}
+
+.burger__line:nth-child(3) {
+  width: 75%;
+}
+
+.burger--active {
+  position: fixed;
+  top: 22px;
+  left: 20px;
+  z-index: 200;
+}
+
+.burger--active .burger__line {
+  background-color: var(--color-bg-light);
+}
+
+.burger--active .burger__line:first-child {
+  width: 100%;
+  transform: translateY(9.5px) rotate(45deg);
+}
+
+.burger--active .burger__line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger--active .burger__line:last-child {
+  width: 100%;
+  transform: translateY(-9.5px) rotate(-45deg);
+}

@@ -1,0 +1,85 @@
+.hero {
+	position: relative;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	overflow: hidden;
+	background-image: url("../../images/hero-bg.png");
+	background-size: cover;
+	background-position: center;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.hero__content {
+	display: grid;
+	place-items: center;
+	gap: calc(1vw + 12px);
+	text-align: center;
+}
+
+.hero__subtitle {
+	font-family: var(--font-secondary);
+	font-size: clamp(22px, 2.08vw, 88px);
+	font-weight: 300;
+	line-height: 1.3;
+	color: var(--color-white);
+}
+
+.hero__btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 18px 60px;
+	background-color: var(--color-accent);
+	font-family: var(--font-primary);
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--color-white);
+	transition: opacity 0.2s;
+}
+
+.hero__btn:hover {
+	opacity: 0.85;
+}
+
+.hero__brand {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 9vw;
+	overflow: hidden;
+}
+
+.hero__brand-img {
+	width: 100%;
+	max-width: 1920px;
+	display: block;
+	margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+	.hero__btn {
+		padding: 14px 48px;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero {
+		height: 70vh;
+	}
+}
+
+@media (max-width: 360px) {
+	.hero__btn {
+		width: 100%;
+		padding: 14px 20px;
+	}
+
+	.hero__brand {
+		height: 8vw;
+	}
+}

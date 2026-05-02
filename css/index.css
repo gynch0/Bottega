@@ -1,0 +1,22 @@
+@import 'base/normalize.css';
+@import 'base/vars.css';
+@import 'base/fonts.css';
+@import 'base/globals.css';
+
+@import 'blocks/header.css';
+@import 'blocks/burger.css';
+@import 'blocks/hero.css';
+@import 'blocks/brand-title.css';
+@import 'blocks/catalog-preview.css';
+@import 'blocks/about.css';
+@import 'blocks/founder.css';
+@import 'blocks/collections.css';
+@import 'blocks/collection-detail.css';
+@import 'blocks/bespoke.css';
+@import 'blocks/reviews.css';
+@import 'blocks/why.css';
+@import 'blocks/care-steps.css';
+@import 'blocks/gift.css';
+@import 'blocks/faq.css';
+@import 'blocks/quiz.css';
+@import 'blocks/footer.css';
